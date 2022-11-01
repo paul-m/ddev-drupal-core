@@ -1,0 +1,13 @@
+#!/bin/bash
+#ddev-generated
+
+## Description: Run the run-tests.sh script.
+## Usage: drupal-run-tests <arguments>
+
+export XDEBUG_MODE=coverage
+
+php core/scripts/run-tests.sh \
+  --sqlite foo.sqlite \
+  --url $DDEV_PRIMARY_URL \
+  --dburl mysql://db:db@$DDEV_PROJECT-db:3306/db \
+  "$@"

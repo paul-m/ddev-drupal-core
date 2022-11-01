@@ -1,0 +1,13 @@
+#!/bin/bash
+#ddev-generated
+
+## Description: Run tests using PHPUnit.
+## Usage: drupal-phpunit-tests <arguments>
+
+export XDEBUG_MODE=coverage
+export SIMPLETEST_DB=mysql://db:db@$DDEV_PROJECT-db:3306/db
+export SIMPLETEST_BASE_URL=$DDEV_PRIMARY_URL
+
+./vendor/bin/phpunit \
+  -c core/ \
+  "$@"
