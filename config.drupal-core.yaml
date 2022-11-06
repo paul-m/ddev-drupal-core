@@ -1,5 +1,4 @@
 #ddev-generated
-name: drupal-core-dev
 type: drupal9
 docroot: ""
 # Drupal minimum PHP. See: https://www.drupal.org/docs/system-requirements/php-requirements
